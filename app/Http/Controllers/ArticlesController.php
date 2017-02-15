@@ -38,7 +38,7 @@ class ArticlesController extends Controller
     public function store(ArticleRequest $request)
     {
         //Article::create($request->all());
-      $article = \Auth::user()->articles()->create($request->all());
+        $article = \Auth::user()->articles()->create($request->all());
         $article->tags()->attach($request->input('tag_list'));
 
         \Session::flash('flash_message', '記事を追加しました');

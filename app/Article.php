@@ -28,13 +28,13 @@ class Article extends Model
     public function getTitleAttribute($value)
     {
         //大文字に変換
-      return mb_strtoupper($value);
+        return mb_strtoupper($value);
     }
 
     public function setTitleAttribute($value)
     {
         //小文字に変換
-      $this->attributes['title'] = mb_strtolower($value);
+        $this->attributes['title'] = mb_strtolower($value);
     }
 
     public function getTagListAttribute()
