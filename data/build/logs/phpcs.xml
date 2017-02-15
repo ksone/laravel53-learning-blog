@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="2.8.0">
+<file name="/home/vagrant/icchi-dev/blog/app/Article.php">
+ <error line="10" column="15" severity="error" message="Protected member variable &quot;fillable&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="11" column="15" severity="error" message="Protected member variable &quot;dates&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="13" column="28" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="17" column="28" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="21" column="44" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="25" column="47" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="30" column="47" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="35" column="43" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Console/Kernel.php">
+ <error line="15" column="15" severity="error" message="Protected member variable &quot;commands&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Exceptions/Handler.php">
+ <error line="16" column="15" severity="error" message="Protected member variable &quot;dontReport&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="57" column="84" severity="warning" message="Line exceeds 80 characters; contains 84 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Controllers/ArticlesController.php">
+ <error line="15" column="35" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="19" column="29" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="25" column="44" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="29" column="30" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="35" column="52" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="45" column="44" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="51" column="71" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="60" column="47" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Controllers/Auth/LoginController.php">
+ <error line="28" column="15" severity="error" message="Protected member variable &quot;redirectTo&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Controllers/Auth/RegisterController.php">
+ <error line="30" column="15" severity="error" message="Protected member variable &quot;redirectTo&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="50" column="27" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="54" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="65" column="22" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="69" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Controllers/Auth/ResetPasswordController.php">
+ <error line="28" column="15" severity="error" message="Protected member variable &quot;redirectTo&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Controllers/PagesController.php">
+ <error line="9" column="29" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ <error line="10" column="7" severity="error" message="Variable &quot;first_name&quot; is not in valid camel caps format" source="Zend.NamingConventions.ValidVariableName.NotCamelCaps"/>
+ <error line="11" column="7" severity="error" message="Variable &quot;last_name&quot; is not in valid camel caps format" source="Zend.NamingConventions.ValidVariableName.NotCamelCaps"/>
+ <error line="15" column="31" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Controllers/WelcomeController.php">
+ <error line="11" column="29" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/helper.php">
+ <error line="3" column="1" severity="warning" message="Consider putting global function &quot;delete_form&quot; in a static class" source="Squiz.Functions.GlobalFunction.Found"/>
+ <error line="3" column="53" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Kernel.php">
+ <error line="16" column="15" severity="error" message="Protected member variable &quot;middleware&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="25" column="15" severity="error" message="Protected member variable &quot;middlewareGroups&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="48" column="15" severity="error" message="Protected member variable &quot;routeMiddleware&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="50" column="85" severity="warning" message="Line exceeds 80 characters; contains 85 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Middleware/EncryptCookies.php">
+ <error line="14" column="15" severity="error" message="Protected member variable &quot;except&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Http/Middleware/VerifyCsrfToken.php">
+ <error line="14" column="15" severity="error" message="Protected member variable &quot;except&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Providers/AuthServiceProvider.php">
+ <error line="6" column="83" severity="warning" message="Line exceeds 80 characters; contains 83 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="15" column="15" severity="error" message="Protected member variable &quot;policies&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Providers/BroadcastServiceProvider.php">
+ <error line="22" column="20" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="24" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Providers/EventServiceProvider.php">
+ <error line="6" column="84" severity="warning" message="Line exceeds 80 characters; contains 84 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="15" column="15" severity="error" message="Protected member variable &quot;listen&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Providers/RouteServiceProvider.php">
+ <error line="6" column="84" severity="warning" message="Line exceeds 80 characters; contains 84 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="17" column="15" severity="error" message="Protected member variable &quot;namespace&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="54" column="16" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="57" column="1" severity="error" message="Multi-line function call not indented correctly; expected 12 spaces but found 8" source="PEAR.Functions.FunctionCallSignature.Indent"/>
+ <error line="59" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+ <error line="71" column="16" severity="error" message="Opening parenthesis of a multi-line function call must be the last content on the line" source="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
+ <error line="75" column="1" severity="error" message="Multi-line function call not indented correctly; expected 12 spaces but found 8" source="PEAR.Functions.FunctionCallSignature.Indent"/>
+ <error line="77" column="10" severity="error" message="Closing parenthesis of a multi-line function call must be on a line by itself" source="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/Tag.php">
+ <error line="9" column="13" severity="error" message="Protected member variable &quot;fillable&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="11" column="30" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+<file name="/home/vagrant/icchi-dev/blog/app/User.php">
+ <error line="17" column="15" severity="error" message="Protected member variable &quot;fillable&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="26" column="15" severity="error" message="Protected member variable &quot;hidden&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="30" column="32" severity="error" message="Opening brace should be on a new line" source="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+</file>
+</checkstyle>
+
