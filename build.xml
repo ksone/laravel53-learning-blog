@@ -17,7 +17,7 @@
     <mkdir dir="${datadir}/build/phpdoc" />
   </target>
   <target name="phpcs" description="PHPCS">
-    <phpcodesniffer standard="Zend" encoding="utf-8" file="${appdir}/" allowedFileExtensions="php">
+    <phpcodesniffer standard="phpcs.xml" encoding="utf-8" file="${appdir}/" allowedFileExtensions="php">
       <formatter type="checkstyle" outfile="${logdir}/phpcs.xml" />
     </phpcodesniffer>
   </target>
