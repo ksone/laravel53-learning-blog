@@ -46,7 +46,7 @@
     </exec>
   </target>
   <target name="phpunit" description="run phpunit">
-    <exec dir="${basedir}/tests" executable="phpunit" output="${logdir}/phpunit.log">
+    <exec dir="${basedir}/tests" executable="${basedir}/vendor/bin/phpunit" output="${logdir}/phpunit.log">
       <arg line="--configuration=${basedir}/phpunit.xml" />
       <arg line="--log-junit=${logdir}/phpunit.xml" />
       <arg line="--coverage-html=${datadir}/build/coverage/" />
