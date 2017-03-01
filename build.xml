@@ -47,10 +47,11 @@
   </target>
   <target name="phpunit" description="run phpunit">
     <exec dir="${basedir}/tests" executable="phpunit" output="${logdir}/phpunit.log">
-      <arg line="--configuration=${basedir}/tests/phpunit.xml" />
+      <arg line="--configuration=${basedir}/phpunit.xml" />
       <arg line="--log-junit=${logdir}/phpunit.xml" />
       <arg line="--coverage-html=${datadir}/build/coverage/" />
       <arg line="--coverage-clover=${logdir}/coverage.xml" />
     </exec>
+    <exec command="cat ${logdir}/phpunit.log" passthru="true" />
   </target>
 </project>
