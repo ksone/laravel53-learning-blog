@@ -4,7 +4,7 @@
   <property name="appdir"  value="${basedir}/app" />
   <property name="datadir" value="${basedir}/data" />
   <property name="logdir"  value="${datadir}/build/logs" />
-  <target name="build" depends="clean,prepare,phpcs,phpmd,phpcpd,phpdoc,phpunit">
+  <target name="build" depends="clean,prepare,phpcs,phpmd,phpcpd,phpdoc,phpunit,-check-failure">
   </target>
   <target name="clean" description="clean">
     <delete dir="${logdir}" />
@@ -45,13 +45,24 @@
       <arg line="-p" />
     </exec>
   </target>
-  <target name="phpunit" description="run phpunit">
-    <exec dir="${basedir}/tests" executable="${basedir}/vendor/bin/phpunit" output="${logdir}/phpunit.log">
+  <target name="phpunit" description="run phpunit" unless="phpunit.done">
+    <exec dir="${basedir}/tests" executable="${basedir}/vendor/bin/phpunit" returnProperty="result.phpunit" output="${logdir}/phpunit.log">
       <arg line="--configuration=${basedir}/phpunit.xml" />
       <arg line="--log-junit=${logdir}/phpunit.xml" />
       <arg line="--coverage-html=${datadir}/build/coverage/" />
       <arg line="--coverage-clover=${logdir}/coverage.xml" />
     </exec>
     <exec command="cat ${logdir}/phpunit.log" passthru="true" />
+    <property name="phpunit.done" value="true"/>
+  </target>
+  <target name="-check-failure">
+   <if>
+    <not>
+     <equals arg1="${result.phpunit}" arg2="0"/>
+    </not>
+    <then>
+     <fail message="PHPUnit did not finish successfully"/>
+    </then>
+   </if>
   </target>
 </project>
